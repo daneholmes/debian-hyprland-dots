@@ -37,7 +37,7 @@
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 1,
-    "on-click": "nm-connection-editor"
+    "on-click": "~/.config/waybar/scripts/toggle-tui.sh impala-nm impala-nm"
   },
 
   "bluetooth": {
@@ -47,7 +47,7 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "blueman-manager"
+    "on-click": "~/.config/waybar/scripts/toggle-tui.sh bluetui bluetui"
   },
 
   "pulseaudio": {
@@ -56,8 +56,12 @@
     "format-icons": { "headphone": "", "headset": "", "default": ["","",""] },
     "scroll-step": 5,
     "tooltip-format": "Volume: {volume}%",
-    "on-click": "pavucontrol"
+    "on-click": "~/.config/waybar/scripts/toggle-tui.sh wiremix wiremix"
   },
 
-  "cpu": { "interval": 5, "format": "󰍛" },
+  "cpu": { 
+    "interval": 5, 
+    "format": "󰍛",
+    "on-click": "~/.config/waybar/scripts/toggle-tui.sh btop btop"
+  }
 }
