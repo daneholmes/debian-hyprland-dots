@@ -1,4 +1,5 @@
 ## Debian Hyprland Dots
+Hyprland desktop on Debian 13 that looks like Omarchy.
 
 ### Installation Pt. 1 - Hyprland
 1. `sudo apt install git`
