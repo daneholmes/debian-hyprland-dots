@@ -39,9 +39,11 @@ Hyprland desktop on Debian 13 that looks like Omarchy. Work in progress.
 8. Bluetooth TUI `cargo install bluetui`
 9. Audio TUI `cargo install wiremix`
 
+`git config --global user.email "you@example.com"`
+`git config --global user.dane "Your Name"`
+
 ### To-do
 ### Setup
-1. Rofi
 2. SDDM theme
 3. Hypridle, proper sleep, and screensaver
 4. Multiple color schemes with switching
