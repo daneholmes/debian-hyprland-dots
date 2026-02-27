@@ -10,7 +10,7 @@ Hyprland desktop on Debian 13 that looks like Omarchy.
 7. `./install.sh`
 8. On the software selection screen add `nvidia,` `input_group,` and `sddm.` Then complete the installation.
 
-### Applications
+### Hyprland Applications
 - Authentication agent: hyprpolkit agent `systemctl --user enable hyprpolkitagent`
 - Terminal: kitty
 - Wallpaper: swww
@@ -22,12 +22,9 @@ Hyprland desktop on Debian 13 that looks like Omarchy.
 - Status bar / shell: waybar
 - Clipboard: wl-copy
 
-### Things to install
+### Software to install
 1. Hyprland - [LinuxBeginnings/Debian-Hyprland]()
 2. Firefox - [Read More](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
-- `sudo apt install zsh zplug`
-- `sudo apt install eza`
-- `cargo install bluetui`
-- `cargo install wiremix`
-- `cargo install impala-nm`
-- `sudo apt install btop`
+3. ZSH `sudo apt install zsh zplug`
+4. EZA `sudo apt install eza`
+5. TUIs `cargo install bluetui`, `cargo install wiremix`, `cargo install impala-nm`
