@@ -25,6 +25,7 @@ Hyprland desktop on Debian 13 that looks like Omarchy.
 ### Things to install
 1. Hyprland - [LinuxBeginnings/Debian-Hyprland]()
 - `sudo apt install zsh zplug`
+- `sudo apt install eza`
 - `cargo install bluetui`
 - `cargo install wiremix`
 - `cargo install impala-nm`
