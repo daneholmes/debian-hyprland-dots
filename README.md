@@ -40,7 +40,7 @@ Hyprland desktop on Debian 13 that looks like Omarchy. Work in progress.
 9. Audio TUI `cargo install wiremix`
 
 `git config --global user.email "you@example.com"`
-`git config --global user.dane "Your Name"`
+`git config --global user.nane "Your Name"`
 
 ### To-do
 ### Setup
