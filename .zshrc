@@ -4,6 +4,8 @@
 alias ls='eza --color=auto'
 alias ll='eza -lah --color=auto'
 alias grep='grep --color=auto'
+alias bluetooth='bluetui'
+alias network='impala-nm'
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
