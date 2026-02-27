@@ -8,7 +8,7 @@ Hyprland desktop on Debian 13 that looks like Omarchy.
 5. `cd Debian-Hyprland/`
 6. `chmod +x install.sh`
 7. `./install.sh`
-8. In the tui select `nvidia,` `input_group,` and `sddm.`
+8. On the software selection screen add `nvidia,` `input_group,` and `sddm.` Then complete the installation.
 
 ### Things to install
 1. Hyprland - [LinuxBeginnings/Debian-Hyprland]()
