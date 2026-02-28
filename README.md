@@ -10,6 +10,15 @@ Hyprland desktop on Debian 13. *work in progress - notes & config*
 7. `./install.sh`
 8. On the software selection screen add `nvidia,` `input_group,` and `sddm.` Then complete the installation.
 
+### Manually Setup Up Config
+`~ ln -sfn ~/.config/themes/current/theme/hyprland.conf ~/.config/hypr/theme.conf`
+
+`~ ln -sfn ~/.config/themes/current/theme/hyprlock.conf ~/.config/hypr/hyprlock-theme.conf`
+
+`~ ln -sfn ~/.config/themes/current/theme/kitty.conf ~/.config/kitty/theme.conf`
+
+`~ ln -sfn ~/.config/themes/current/theme/waybar.css ~/.config/waybar/style.css`
+
 ### Hyprland Applications
 - Authentication agent: hyprpolkit agent `systemctl --user enable hyprpolkitagent`
 - Terminal: kitty
