@@ -1,5 +1,5 @@
 ## Debian Hyprland Dots
-Hyprland desktop on Debian 13 that looks like Omarchy. Work in progress.
+Hyprland desktop on Debian 13. *work in progress - notes & config*
 
 ### Install Hyprland
 1. `sudo apt install git`
@@ -25,26 +25,47 @@ Hyprland desktop on Debian 13 that looks like Omarchy. Work in progress.
 ### Install Software
 1. Hyprland - [LinuxBeginnings/Debian-Hyprland](https://github.com/LinuxBeginnings/Debian-Hyprland)
 2. Firefox - [Mozilla Support](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
-3. Zsh `sudo apt install zsh zplug`
-4. eza `sudo apt install eza`
-5. Enable NetworkManager and disable ifupdown.
+3. Sublime - [Sublime Docs](https://www.sublimetext.com/docs/linux_repositories.html#apt)
+4. Zsh `sudo apt install zsh zplug`
+5. eza `sudo apt install eza`
+6. Enable NetworkManager and disable ifupdown.
 - `sudo apt install network-manager`
 - `sudo systemctl disable --now networking`
 - `sudo systemctl enable --now NetworkManager`
 
 *You may have to unbind ifupdown from your current interface if you want NetworkManager to control it.*
 
-6. Network Manager TUI `cargo install impala-nm`
-7. Bluetooth `sudo apt install bluez`
-8. Bluetooth TUI `cargo install bluetui`
-9. Audio TUI `cargo install wiremix`
+7. Network Manager TUI `cargo install impala-nm`
+8. Bluetooth `sudo apt install bluez`
+9. Bluetooth TUI `cargo install bluetui`
+2. Audio TUI `cargo install wiremix`
 
 `git config --global user.email "you@example.com"`
 `git config --global user.nane "Your Name"`
 
+### Manual Configuration
+git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
+cd SilentSDDM/
+cd SilentSDDM/
+sudo mkdir -p /usr/share/sddm/themes/silent
+sudo cp -rf . /usr/share/sddm/themes/silent/
+sudo cp -r /usr/share/sddm/themes/silent/fonts/* /usr/share/fonts/
+sudo mkdir -p /etc/sddm.conf.d
+$ sudo nano /etc/sddm.conf.d/10-silent-theme.conf 
+````
+[General]
+InputMethod=qtvirtualkeyboard
+GreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/silent/components/,QT_IM_MODULE=qtvirtualkeyboard
+
+[Theme]
+Current=silent
+```
+
 ### To-do
 ### Setup
-2. SDDM theme
-3. Hypridle, proper sleep, and screensaver
+2. SDDM theme -> clean this whole thing up
+3. Hypridle screensaver
+4. Make sddm and hyprlock look not bad together
 4. Multiple color schemes with switching
 5. Firewall
+6. 
