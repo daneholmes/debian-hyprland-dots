@@ -45,15 +45,21 @@ Hyprland desktop on Debian 13. *work in progress - notes & config*
 `git config --global user.name "Your Name"`
 
 ### Manual Configuration
-git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
-cd SilentSDDM/
-cd SilentSDDM/
-sudo mkdir -p /usr/share/sddm/themes/silent
-sudo cp -rf . /usr/share/sddm/themes/silent/
-sudo cp -r /usr/share/sddm/themes/silent/fonts/* /usr/share/fonts/
-sudo mkdir -p /etc/sddm.conf.d
-$ sudo nano /etc/sddm.conf.d/10-silent-theme.conf 
-````
+`git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM`
+
+`cd SilentSDDM/`
+
+`sudo mkdir -p /usr/share/sddm/themes/silent`
+
+`sudo cp -rf . /usr/share/sddm/themes/silent/`
+
+`sudo cp -r /usr/share/sddm/themes/silent/fonts/* /usr/share/fonts/`
+
+`sudo mkdir -p /etc/sddm.conf.d`
+
+`sudo vi /etc/sddm.conf.d/10-silent-theme.conf`
+
+```
 [General]
 InputMethod=qtvirtualkeyboard
 GreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/silent/components/,QT_IM_MODULE=qtvirtualkeyboard
@@ -63,10 +69,11 @@ Current=silent
 ```
 
 ### To-do
-### Setup
+### Next up
 2. SDDM theme -> clean this whole thing up
 3. Hypridle screensaver
 4. Make sddm and hyprlock look not bad together
+
+### Way off
 4. Multiple color schemes with switching
 5. Firewall
-6. 
