@@ -26,6 +26,7 @@ Hyprland desktop on Debian 13. *work in progress - notes & config*
 1. Hyprland - [LinuxBeginnings/Debian-Hyprland](https://github.com/LinuxBeginnings/Debian-Hyprland)
 2. Firefox - [Mozilla Support](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
 3. Sublime - [Sublime Docs](https://www.sublimetext.com/docs/linux_repositories.html#apt)
+4. `sudo apt install timeshift`
 4. Zsh `sudo apt install zsh zplug`
 5. eza `sudo apt install eza`
 6. Enable NetworkManager and disable ifupdown.
