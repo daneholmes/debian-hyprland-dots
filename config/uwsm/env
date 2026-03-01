@@ -1,4 +1,9 @@
 # Changes require a restart to take effect.
 
-export META_PATH="$HOME/.meta"
+# Ensure bins are in the path
+export META_PATH="$HOME/.local/usr/hypeless"
 export PATH="$HOME/.local/bin:$PATH"
+
+. "$HOME/.config/uwsm/default"
+
+hl-cmd-present mise && eval "$(mise activate bash)"
