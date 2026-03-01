@@ -8,7 +8,7 @@ fi
 CURRENT_THEME_PATH="$HOME/.meta/current/theme"
 NEXT_THEME_PATH="$HOME/.meta/current/next-theme"
 USER_THEMES_PATH="$HOME/.meta/themes"
-THEMES_PATH="$DOTS_PATH/themes"
+THEMES_PATH="$META_PATH/.themes"
 
 THEME_NAME=$(echo "$1" | sed -E 's/<[^>]+>//g' | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 

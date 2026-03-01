@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEMPLATES_DIR="$DOT_PATH/default/themed"
+TEMPLATES_DIR="$META_PATH/default/themed"
 USER_TEMPLATES_DIR="$HOME/.meta/themed"
 NEXT_THEME_DIR="$HOME/.meta/current/next-theme"
 COLORS_FILE="$NEXT_THEME_DIR/colors.toml"
