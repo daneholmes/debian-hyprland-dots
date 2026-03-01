@@ -21,17 +21,19 @@ _work in progress_
 ### STEP THREE: Copy hypeless
 
 1. `git clone https://github.com/daneholmes/hypeless.git ~/.local/usr/hypeless`
-2. `ln -sfn ~/.local/usr/hypeless/config/hypr ~/.config/hypr`
-3. `ln -sfn ~/.local/usr/hypeless/config/kitty ~/.config/kitty`
-4. `ln -sfn ~/.local/usr/hypeless/config/waybar ~/.config/waybar`
-5. `ln -sfn ~/.local/usr/hypeless/config/uwsm ~/.config/uwsm`
-6. `ln -sfn ~/.local/usr/hypeless/config/user-dirs.dirs ~/.config/user-dirs.dirs`
-7. `ln -sfn ~/.local/usr/hypeless/config/xdg-terminals.list ~/.config/xdg-terminals.list`
-8. `ln -sfn ~/.local/usr/hypeless/bin ~/.local/bin`
-9. `ln -sfn ~/.local/usr/hypeless/meta ~/.meta`
-10. `ln -sfn ~/.local/usr/hypeless/themes ~/.themes`
-11. `ln -sfn ~/.local/usr/hypeless/.zshrc ~/.zshrc`
-12. `ln -sfn ~/.local/usr/hypeless/.zshenv ~/.zshenv`
+2. `sudo apt install xdg-terminal-exec swaybg zsh zplug eza`
+3. `ln -sfn ~/.local/usr/hypeless/config/hypr ~/.config/hypr`
+4. `ln -sfn ~/.local/usr/hypeless/config/kitty ~/.config/kitty`
+5. `ln -sfn ~/.local/usr/hypeless/config/waybar ~/.config/waybar`
+6. `ln -sfn ~/.local/usr/hypeless/config/uwsm ~/.config/uwsm`
+7. `ln -sfn ~/.local/usr/hypeless/config/hypeless ~/.config/hypeless`
+8. `ln -s ~/.local/usr/hypeless/config/user-dirs.dirs ~/.config/user-dirs.dirs`
+9. `ln -s ~/.local/usr/hypeless/config/xdg-terminals.list ~/.config/xdg-terminals.list`
+10. `ln -sfn ~/.local/usr/hypeless/bin ~/.local/bin`
+11. `ln -sfn ~/.local/usr/hypeless/meta ~/.meta`
+12. `ln -sfn ~/.local/usr/hypeless/themes ~/.themes`
+13. `ln -s ~/.local/usr/hypeless/.zshrc ~/.zshrc`
+14. `ln -s ~/.local/usr/hypeless/.zshenv ~/.zshenv`
 
 ## Rest of this is notes
 
