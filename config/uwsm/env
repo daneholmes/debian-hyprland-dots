@@ -1,0 +1,4 @@
+# Changes require a restart to take effect.
+
+export META_PATH="$HOME/.meta"
+export PATH="$HOME/.local/bin:$PATH"
