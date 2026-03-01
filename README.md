@@ -1,6 +1,6 @@
 ## Hypeless
 
-Hyprland, using Omarchy hypeless and scripts,on Debian 13.
+Hyprland, using Omarchy dots and scripts, on Debian 13.
 
 _work in progress_
 
