@@ -2,7 +2,6 @@
 
 # Aliases
 alias cl='clear && ls'
-alias dots='cd ~/Repos/dots'
 alias lg='lazygit'
 alias ls='eza --color=auto'
 alias ll='eza -lah --color=auto'
@@ -38,13 +37,14 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
 zplug "junegunn/fzf"
-zplug "themes/simple", from:oh-my-zsh, as:theme   # Theme
+zplug "themes/simple", from:oh-my-zsh, as:theme # Theme
 
 # zplug - install/load new plugins when zsh is started or reloaded
 if ! zplug check; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
+	printf "Install? [y/N]: "
+	if read -q; then
+		echo
+		zplug install
+	fi
 fi
 zplug load
