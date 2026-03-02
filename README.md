@@ -30,15 +30,14 @@ _work in progress_
 2. `git clone https://github.com/daneholmes/hypeless.git ~/.local/share/omarchy`
 3. `cp -r ~/.local/share/omarchy/config/hypr ~/.config/hypr`
 4. `cp -r ~/.local/share/omarchy/config/kitty ~/.config/kitty`
-5. `cp -r ~/.local/share/omarchy/config/waybar ~/.config/waybar`
+5. `cp -r ~/.local/share/omarchy/config/omarchy ~/.config/omarchy`
 6. `cp -r ~/.local/share/omarchy/config/uwsm ~/.config/uwsm`
-7. `cp ~/.local/share/omarchy/config/xdg-terminals.list ~/.config/xdg-terminals.list`
-8. `cp ~/.local/share/omarchy/.zshrc ~/.zshrc`
-9. `cp ~/.local/share/omarchy/.zshenv ~/.zshenv`
+7. `cp -r ~/.local/share/omarchy/config/waybar ~/.config/waybar`
+8. `cp ~/.local/share/omarchy/config/xdg-terminals.list ~/.config/xdg-terminals.list`
+9. `cp ~/.local/share/omarchy/.zshrc ~/.zshrc`
+10. `cp ~/.local/share/omarchy/.zshenv ~/.zshenv`
 
-## Rest of this is notes
-
-### Hyprland Applications
+#### Hyprland Applications
 
 - Authentication agent: hyprpolkit agent `systemctl --user enable hyprpolkitagent`
 - Terminal: kitty
@@ -51,17 +50,7 @@ _work in progress_
 - Status bar / shell: waybar
 - Clipboard: wl-copy
 
-### Misc
-
-1. [Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
-2. [Sublime](https://www.sublimetext.com/docs/linux_repositories.html#apt)
-3. Enable NetworkManager and disable ifupdown.
-
-- `sudo apt install network-manager`
-- `sudo systemctl disable --now networking`
-- `sudo systemctl enable --now NetworkManager`
-
-### Manual Configuration
+#### Manual Configuration
 
 1. `git config --global user.email "you@example.com"`
 2. `git config --global user.name "Your Name"`
@@ -69,3 +58,10 @@ _work in progress_
 4. Bluetooth `sudo apt install bluez`
 5. Bluetooth TUI `cargo install bluetui`
 6. Audio TUI `cargo install wiremix`
+7. [Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
+8. [Sublime](https://www.sublimetext.com/docs/linux_repositories.html#apt)
+9. Enable NetworkManager and disable ifupdown.
+
+- `sudo apt install network-manager`
+- `sudo systemctl disable --now networking`
+- `sudo systemctl enable --now NetworkManager`
