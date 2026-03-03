@@ -58,12 +58,6 @@ I am starting to think I might want to make my own hyprland install script :(. w
 - Clipboard: wl-copy
 
 #### Manual Configuration
-
-
-
-8. 
-9. Enable NetworkManager and disable ifupdown.
-
 - `sudo apt install network-manager`
 - `sudo systemctl disable --now networking`
 - `sudo systemctl enable --now NetworkManager`
