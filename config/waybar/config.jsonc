@@ -71,7 +71,7 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "omarchy-launch-bluetooth"
+    "on-click": "omarchy-launch-or-focus-tui bluetui"
   },
   "pulseaudio": {
     "format": "{icon}",
