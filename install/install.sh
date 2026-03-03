@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-# =========================
-# Omarchy bootstrap script
-# =========================
+#################################
+### HYPELESS BOOTSTRAP SCRIPT ###
+#################################
 
 OMARCHY_DIR="${OMARCHY_DIR:-$HOME/.local/share/omarchy}"
 OMARCHY_CONFIG_DIR="$OMARCHY_DIR/config"
