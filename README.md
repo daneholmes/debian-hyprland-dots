@@ -10,16 +10,10 @@ _work in progress_
 
 1. `git clone --depth=1 https://github.com/LinuxBeginnings/Debian-Hyprland.git ~repos/Debian-Hyprland` # _use v3.0.0_
 2. `./install.sh`
-3. On the software selection screen add `nvidia,` `input_group,` `thunar.` Later, select Nvidia Open Drivers
+3. On the software selection screen add `nvidia,` `sddm,` `bluetooth,` `input_group,` `thunar.` Later, select Nvidia Open Drivers
 4. Restart.
 
 I am starting to think I might want to make my own hyprland install script :(. walker and elephant have to be complied for a lot of omarchy dots to work. Elephant is easy to compile, walker is a bit of a pain. There is a lot of unnecessary software baked into this script rofi, swww, etc.
-
-#### STEP TWO: INSTALL [SDDM](https://wiki.debian.org/SDDM)
-
-1. `sudo apt install sddm`
-2. `/etc/sddm.conf` # _[conf](https://manpages.debian.org/trixie/sddm/sddm.conf.5.en.html)_
-3. `sudo systemctl enable sddm.service`
 
 #### STEP THREE: INSTALL [USWM](https://github.com/Vladimir-csp/uwsm)
 
