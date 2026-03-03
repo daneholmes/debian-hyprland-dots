@@ -48,8 +48,9 @@
   },
   "clock": {
     "format": "{:L%A %H:%M}",
-    "format-alt": "{:L%H:%M:%S %p, %A, %-d %B %Y}",
-    "tooltip": false
+    "format-alt": "{:%H:%M:%S %p, %A, %d %B %Y}",
+    "tooltip": false,
+    "interval": 1
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
