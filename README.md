@@ -21,6 +21,7 @@ I am starting to think I might want to make my own hyprland install script :(. w
 2. `./build-deb.sh -i`
 
 #### STEP FOUR: COPY HYPELESS CONFIG
+// install script does this and 
 
 1. `sudo apt install xdg-terminal-exec zsh zplug eza swaybg swayosd pipewire`
 2. `git clone https://github.com/daneholmes/hypeless.git ~/.local/share/omarchy`
@@ -35,6 +36,13 @@ I am starting to think I might want to make my own hyprland install script :(. w
 11. `cp ~/.local/share/omarchy/config/xdg-terminals.list ~/.config/xdg-terminals.list`
 12. `cp ~/.local/share/omarchy/.zshrc ~/.zshrc`
 13. `cp ~/.local/share/omarchy/.zshenv ~/.zshenv`
+14. `git config --global user.email "you@example.com"`
+15. `git config --global user.name "Your Name"`
+16. Network Manager TUI `cargo install impala-nm`
+17. Bluetooth `sudo apt install bluez`
+18. Bluetooth TUI `cargo install bluetui`
+19. Audio TUI `cargo install wiremix`
+20. [Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
 
 #### Hyprland Applications
 
@@ -51,14 +59,9 @@ I am starting to think I might want to make my own hyprland install script :(. w
 
 #### Manual Configuration
 
-1. `git config --global user.email "you@example.com"`
-2. `git config --global user.name "Your Name"`
-3. Network Manager TUI `cargo install impala-nm`
-4. Bluetooth `sudo apt install bluez`
-5. Bluetooth TUI `cargo install bluetui`
-6. Audio TUI `cargo install wiremix`
-7. [Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
-8. [Sublime](https://www.sublimetext.com/docs/linux_repositories.html#apt)
+
+
+8. 
 9. Enable NetworkManager and disable ifupdown.
 
 - `sudo apt install network-manager`
