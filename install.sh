@@ -148,8 +148,15 @@ copy_dir "$OMARCHY_CONFIG_DIR/btop" "$TARGET_CONFIG_DIR/btop"
 
 log "Setting up btop theme symlink"
 mkdir -p "$TARGET_CONFIG_DIR/btop/themes"
-ln -sf "$TARGET_CONFIG_DIR/omarchy/current/theme/btop.theme" \
-	"$TARGET_CONFIG_DIR/btop/themes/current.theme"
+
+BTP_THEME_SRC="$TARGET_CONFIG_DIR/omarchy/current/theme/btop.theme"
+BTP_THEME_DST="$TARGET_CONFIG_DIR/btop/themes/current.theme"
+
+if [[ -e "$BTP_THEME_SRC" ]]; then
+	ln -sf "$BTP_THEME_SRC" "$BTP_THEME_DST"
+else
+	warn "btop theme not found at $BTP_THEME_SRC; skipping symlink"
+fi
 
 copy_file "$OMARCHY_CONFIG_DIR/xdg-terminals.list" "$TARGET_CONFIG_DIR/xdg-terminals.list"
 copy_file "$OMARCHY_DIR/.zshrc" "$HOME/.zshrc"
