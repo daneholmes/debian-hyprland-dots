@@ -57,7 +57,7 @@ I am starting to think I might want to make my own hyprland install script :(. w
 - `sudo apt install network-manager`
 - `sudo systemctl disable --now networking`
 - `sudo systemctl enable --now NetworkManager`
-- `sudo apt install iwd`
+- `sudo apt install iwd` _[ref.](https://wiki.debian.org/NetworkManager/iwd)_
 - `sudo mkdir -p /etc/NetworkManager/conf.d`
 - `printf '[device]\nwifi.backend=iwd\n' | sudo tee /etc/NetworkManager/conf.d/wifi_backend.conf > /dev/null'`
 - `sudo systemctl enable --now iwd`
