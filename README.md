@@ -71,6 +71,6 @@ the install.sh script covers _most_ of this.
 - `sudo systemctl enable --now NetworkManager`
 - `sudo apt install iwd`
 - `sudo mkdir -p /etc/NetworkManager/conf.d`
--
+- `printf '[device]\nwifi.backend=iwd\n' | sudo tee /etc/NetworkManager/conf.d/wifi_backend.conf > /dev/null'
 - `sudo systemctl enable --now iwd`
 - `sudo systemctl restart NetworkManager`
