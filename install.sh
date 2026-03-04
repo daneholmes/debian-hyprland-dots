@@ -132,7 +132,7 @@ if command -v cargo >/dev/null 2>&1; then
 	HAVE_CARGO=1
 else
 	HAVE_CARGO=0
-	warn "cargo not found; will SKIP cargo installs (impala-nm, bluetui, wiremix)"
+	warn "cargo not found; will SKIP cargo installs (impala, bluetui, wiremix)"
 fi
 
 # --- copy configs ---
@@ -173,7 +173,7 @@ git config --global user.email "$GIT_EMAIL"
 # --- cargo TUIs ---
 if ((HAVE_CARGO == 1)); then
 	log "Installing Rust TUIs via cargo"
-	cargo install impala-nm || warn "cargo install impala-nm failed"
+	cargo install impala || warn "cargo install impala failed"
 	cargo install bluetui || warn "cargo install bluetui failed"
 	cargo install wiremix || warn "cargo install wiremix failed"
 fi

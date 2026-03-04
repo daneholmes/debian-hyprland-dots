@@ -58,7 +58,7 @@ the install.sh script covers _most_ of this.
 
 1. `git config --global user.email "you@example.com"`
 2. `git config --global user.name "Your Name"`
-3. Network Manager TUI `cargo install impala-nm`
+3. Network Manager TUI `cargo install impala`
 4. Bluetooth `sudo apt install bluez`
 5. Bluetooth TUI `cargo install bluetui`
 6. Audio TUI `cargo install wiremix`
@@ -69,3 +69,8 @@ the install.sh script covers _most_ of this.
 - `sudo apt install network-manager`
 - `sudo systemctl disable --now networking`
 - `sudo systemctl enable --now NetworkManager`
+- `sudo apt install iwd`
+- `sudo mkdir -p /etc/NetworkManager/conf.d`
+-
+- `sudo systemctl enable --now iwd`
+- `sudo systemctl restart NetworkManager`
