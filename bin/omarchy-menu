@@ -115,7 +115,7 @@ show_capture_menu() {
 get_webcam_list() {
   v4l2-ctl --list-devices 2>/dev/null | while IFS= read -r line; do
     if [[ $line != $'\t'* && -n $line ]]; then
-      local name="$line"
+      local name=" $line"
       IFS= read -r device || break
       device=$(echo "$device" | tr -d '\t' | head -1)
       [[ -n $device ]] && echo "$device  $name"
