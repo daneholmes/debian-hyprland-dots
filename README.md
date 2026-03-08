@@ -45,9 +45,18 @@ I am starting to think I might want to make my own hyprland install script :(. w
 21. `git config --global user.name "Your Name"`
 22. `git config --global user.email "you@example.com"`
 23. `install elephant`
+24. `ln -snf ~/.local/share/omarchy/default/elephant/omarchy_themes.lua ~/.config/elephant/menus/omarchy_themes.lua`
 24. `sudo apt install libgtk-4-dev & libpoppler-glib-dev & libgtk4-layer-shell-dev & protobuf-compile # walker`
 25. `install walker`
-
+26. mkdir -p ~/Pictures/Screenshots
+27. mkdir -p ~/Pictures/Screen-Recordings
+28. sudo pacman -S gtk4 libadwaita glib2 cairo pango gdk-pixbuf2 base-devel
+29. git clone https://github.com/Satty-org/Satty.git
+30. make build-release
+31. PREFIX=/usr/local make install
+32. sudo bash -c "$(wget -q https://pacstall.dev/q/install -O -)"
+33. pacstall -I gpu-screen-recorder
+34. sudo apt install v4l-utils
 SDDM
 1. cp -r ~/.local/share/omarchy/default/sddm/omarchy /usr/share/sddm/themes/
 2. sudo nano /etc/sddm.conf
@@ -56,6 +65,7 @@ SDDM
 5. [General]
 6. InputMethod=
 7. sudo ln -s /usr/bin/sddm-greeter-qt6 /usr/bin/sddm-greeter
+
 
 
 #### Hyprland Applications
