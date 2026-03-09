@@ -5,7 +5,7 @@
   "spacing": 0,
   "height": 26,
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock",  "custom/idle-indicator", "custom/notification-silencing-indicator"],
+  "modules-center": ["clock", "custom/notification-silencing-indicator"],
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
@@ -93,7 +93,7 @@
       "transition-duration": 600,
       "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"]
+    "modules": ["custom/expand-icon", "tray", "custom/idle-indicator"]
   },
   "custom/expand-icon": {
     "format": "",
