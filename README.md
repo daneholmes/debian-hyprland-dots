@@ -91,3 +91,9 @@ SDDM
 - `printf '[device]\nwifi.backend=iwd\n' | sudo tee /etc/NetworkManager/conf.d/wifi_backend.conf > /dev/null'`
 - `sudo systemctl enable --now iwd`
 - `sudo systemctl restart NetworkManager`
+
+
+
+# TO DO
+Screen recording
+Waybar hyprsunset icon
